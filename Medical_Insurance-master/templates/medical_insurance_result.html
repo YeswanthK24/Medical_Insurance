@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Insurance Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #0077b6; /* Dark blue color for the title */
+            font-size: 36px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 24px;
+            color: #ffffff;
+            margin-top: 20px;
+        }
+
+        /* 3D box effect for the result */
+        .result-box {
+            background-color: #0077b6;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            transform: translateZ(20px);
+        }
+
+        /* Hover effect for the result box */
+        .result-box:hover {
+            transform: translateZ(30px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Medical Insurance Prediction Result</h1>
+    <div class="result-box">
+        <p>Predicted Medical Insurance Cost: ${{ prediction }}</p>
+    </div>
+</body>
+</html>

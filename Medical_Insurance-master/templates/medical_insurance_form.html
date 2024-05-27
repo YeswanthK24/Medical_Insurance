@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Insurance Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://img.freepik.com/free-vector/clean-medical-background_53876-97927.jpg?w=1380&t=st=1696333280~exp=1696333880~hmac=0214f59049a2c00944af0890123bd4de59b957b82bac90112521408091dee1b6'); /* Replace 'medical_background.jpg' with the path to your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #333;
+        }
+        select, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body >
+    <h1>Medical Insurance Prediction Web App</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="age">
+        
+        <label for="sex">Sex:</label>
+        <select name="sex" id="sex">
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+        </select>
+        
+        <label for="bmi">Body Mass Index (BMI):</label>
+        <input type="text" name="bmi" id="bmi">
+        
+        <label for="children">Number of Children:</label>
+        <input type="text" name="children" id="children">
+        
+        <label for="smoker">Smoker:</label>
+        <select name="smoker" id="smoker">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+        
+        <label for="region">Region:</label>
+        <select name="region" id="region">
+            <option value="0">NorthEast</option>
+            <option value="1">NorthWest</option>
+            <option value="2">SouthEast</option>
+            <option value="3">SouthWest</option>
+        </select>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
